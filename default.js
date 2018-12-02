@@ -34,9 +34,7 @@ function loadShader(gl, id, type){
         // シェーダプログラムの初期化
         // シェーダ「プログラム」の初期化
         var program = gl.createProgram();
-        var vs = loadShader(gl, "vs", gl.VERTEX_SHADER);
-        
-        gl.attachShader(program, vs);
+        gl.attachShader(program, loadShader(gl, "vs", gl.VERTEX_SHADER));
         gl.attachShader(program, loadShader(gl, "fs", gl.FRAGMENT_SHADER));
         gl.linkProgram(program);
         if(!gl.getProgramParameter(program, gl.LINK_STATUS)){
