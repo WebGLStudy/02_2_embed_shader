@@ -7,7 +7,7 @@
         <script src="default.js"></script>
 
         <!-- 頂点シェーダ -->
-        <script id="vs">#version 300 es
+        <script id="vs" type="x-shader/x-vertex">#version 300 es
           in vec2 position;
 
           void main(void) {
@@ -16,7 +16,7 @@
         </script>
 
         <!-- フラグメントシェーダ -->
-        <script id="fs">#version 300 es
+        <script id="fs" type="x-shader/x-fragment">#version 300 es
           precision highp float;
 
           out vec4 outColor;
