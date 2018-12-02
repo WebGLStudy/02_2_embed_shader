@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>WebGLStudy 01_hello_world</title>
+        <link rel="stylesheet" type="text/css" href="default.css">
+        <script src="default.js"></script>
+
+        <!-- 頂点シェーダ -->
+        <script id="vs">#version 300 es
+          in vec2 position;
+
+          void main(void) {
+              gl_Position = vec4(position, 0.0, 1.0);
+          }
+        </script>
+
+        <!-- フラグメントシェーダ -->
+        <script id="fs">#version 300 es
+          precision highp float;
+
+          out vec4 outColor;
+
+          void main(void) {
+              outColor = vec4(1.0, 1.0, 0.0, 1.0);
+          }
+        </script>
+      </head>
+    <body>
+        <canvas id="canvas"></canvas>
+    </body>
+</html>
