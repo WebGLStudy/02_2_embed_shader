@@ -40,7 +40,7 @@ function loadShader(gl, id, type){
             alert(gl.getProgramInfoLog(program));
             return;
         }
-        gl.useProgram(gl, program);
+        gl.useProgram(program);
 
         // モデルの構築
         const vertexBuffer = gl.createBuffer();
