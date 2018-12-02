@@ -32,7 +32,6 @@ function loadShader(gl, id, type){
         gl = canvas.getContext('webgl2');
 
         // シェーダプログラムの初期化
-        // シェーダ「プログラム」の初期化
         var program = gl.createProgram();
         gl.attachShader(program, loadShader(gl, "vs", gl.VERTEX_SHADER));
         gl.attachShader(program, loadShader(gl, "fs", gl.FRAGMENT_SHADER));
