@@ -1,6 +1,8 @@
 # HTMLファイルにシェーダを埋め込む
 シェーダをJavascript中に文字列として埋め込む方法の一つに、HTMLの中に記述する方法があります。
 
+https://webglstudy.github.io/02_2_embed_shader/
+
 ![結果画像](result.png)
 
 # 課題
